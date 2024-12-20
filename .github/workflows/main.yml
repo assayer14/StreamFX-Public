@@ -337,7 +337,7 @@ jobs:
       run: |
         packagesbuild "${{ github.workspace }}/build/ci/installer.pkgproj"
     - name: "Artifacts"
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
         name: "${{ matrix.runner }}-${{ matrix.compiler }}-qt${{ matrix.qt }}"
         path: "${{ github.workspace }}/build/package"
